@@ -1,0 +1,32 @@
+/*************************
+* Imports
+*************************/
+@import url("https://fonts.google.com/specimen/Red+Hat+Display");
+/*************************
+* Variables
+*************************/
+/*************************
+* Generic Stylings
+*************************/
+body {
+  margin: 0px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+footer {
+  position: absolute;
+  bottom: .5em;
+  width: 100%;
+  text-align: center;
+}
+
+/*************************
+  * Mobile Stylings
+  *************************/
+/*************************
+  * Tablet Stylings
+  *************************/
+/*************************
+  * Full Desktop Stylings
+  *************************/
+/*# sourceMappingURL=styles.css.map */

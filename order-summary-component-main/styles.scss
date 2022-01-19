@@ -1,0 +1,67 @@
+/*************************
+* Imports
+*************************/
+@import url("https://fonts.google.com/specimen/Red+Hat+Display");
+
+/*************************
+* Variables
+*************************/
+// Screen Size
+$mobile: 375px;
+$desktop: 1440px;
+
+// Colors
+    //Primary
+$Paleblue: hsl(225, 100%, 94%);
+$Brightblue: hsl(245, 75%, 52%);
+    //Secondary
+$Verypaleblue: hsl(225, 100%, 98%);
+$Desaturatedblue: hsl(224, 23%, 55%);
+$Darkblue: hsl(223, 47%, 23%);
+
+// Font Details
+$Fontsizeparagraph: 16px;
+$fontWeightS: 500;
+$fontWeightM: 700;
+$fontWeightL: 900;
+
+/*************************
+* Generic Stylings
+*************************/
+//Normalize
+body{
+    margin: 0px;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  
+  //Get it at the bottom!
+  footer{
+    position: absolute;
+   bottom: .5em;
+   width: 100%;
+   text-align: center;
+  }
+  
+  
+  /*************************
+  * Mobile Stylings
+  *************************/
+  
+  
+  
+  
+  /*************************
+  * Tablet Stylings
+  *************************/
+  
+  
+  
+  
+  /*************************
+  * Full Desktop Stylings
+  *************************/
+  
+  //Desktop Stylings
+  @media only screen and (min-width: 600px) {
+    
+  }
