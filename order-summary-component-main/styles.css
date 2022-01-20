@@ -8,23 +8,67 @@
 /*************************
 * Generic Stylings
 *************************/
-body {
-  margin: 0px;
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
   font-family: 'Red Hat Display', sans-serif;
 }
 
-footer {
+.attribution {
   position: absolute;
   bottom: .5em;
   width: 100%;
   text-align: center;
 }
 
+.tile {
+  margin: auto;
+  width: 400px;
+  height: 650px;
+  padding: 50px;
+  border: 1px solid black;
+}
+
+.content {
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  height: 100px;
+  width: 100%;
+}
+
+button {
+  height: 50px;
+  width: 100%;
+}
+
 /*************************
   * Mobile Stylings
-  *************************/
-/*************************
-  * Tablet Stylings
   *************************/
 /*************************
   * Full Desktop Stylings
