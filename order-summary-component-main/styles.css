@@ -16,7 +16,8 @@ html, body {
   font-family: 'Red Hat Display', sans-serif;
   background-image: url(./images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: top;
+  background-position-y: center;
   background-size: cover;
 }
 
@@ -39,14 +40,33 @@ body {
   text-align: center;
 }
 
+h1 {
+  color: #1f2f56;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hero_image {
+  width: 125%;
+  border-radius: 15px 15px 0px 0px;
+}
+
 .tile {
   background-color: white;
   margin: auto;
   top: 50%;
   width: 400px;
   height: 650px;
-  padding: 50px;
+  padding: 0px 50px 50px 50px;
   border-radius: 15px;
+}
+
+#description {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .content {
@@ -62,9 +82,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 p {
@@ -73,22 +93,27 @@ p {
 
 #plan_title {
   color: #1f2f56;
+  font-weight: 900;
 }
 
 .plan {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100px;
   width: 100%;
-  background-color: #e0e8ff;
+  background-color: #f5f7ff;
   border-radius: 15px;
+}
+
+.plan_cluster {
+  position: relative;
+  right: 10%;
 }
 
 button {
@@ -96,15 +121,24 @@ button {
   width: 100%;
   border: 0px;
   border-radius: 15px;
+  font-weight: 700;
 }
 
 #proceed {
-  background-color: #3829e0;
   color: white;
+  -webkit-box-shadow: 0 10px 20px -6px #3829e0;
+          box-shadow: 0 10px 20px -6px #3829e0;
+  background-color: #3829e0;
+}
+
+a {
+  color: #3829e0;
+  font-weight: 700;
 }
 
 #cancel {
   color: #7280a7;
+  background-color: white;
 }
 
 /*************************
