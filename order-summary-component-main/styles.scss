@@ -102,6 +102,7 @@ html, body{
   #plan_title{
     color:$Darkblue;
     font-weight: $fontWeightL;
+    padding-bottom: 5px;;
   }
 
   .plan{
@@ -117,6 +118,9 @@ html, body{
   .plan_cluster{
     position: relative;
     right: 10%;
+    p{
+      margin: 0px;
+    }
   }
 
   button{

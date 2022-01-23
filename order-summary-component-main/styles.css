@@ -94,6 +94,7 @@ p {
 #plan_title {
   color: #1f2f56;
   font-weight: 900;
+  padding-bottom: 5px;
 }
 
 .plan {
@@ -114,6 +115,10 @@ p {
 .plan_cluster {
   position: relative;
   right: 10%;
+}
+
+.plan_cluster p {
+  margin: 0px;
 }
 
 button {
