@@ -21,6 +21,10 @@ html, body {
   background-size: cover;
 }
 
+p, button {
+  font-size: 16px;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,12 +148,31 @@ a {
 #cancel {
   color: #7280a7;
   background-color: white;
+  text-decoration: none;
 }
 
 /*************************
   * Mobile Stylings
   *************************/
+@media only screen and (max-width: 600px) {
+  p {
+    color: red;
+  }
+  .tile {
+    margin: 6%;
+  }
+  .plan_cluster {
+    position: relative;
+    right: auto;
+  }
+}
+
 /*************************
-  * Full Desktop Stylings
+  * Mobile Stylings
   *************************/
+@media only screen and (max-width: 375px) {
+  p {
+    color: blue;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
