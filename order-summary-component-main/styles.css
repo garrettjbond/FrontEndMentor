@@ -51,7 +51,7 @@ h1 {
 }
 
 .hero_image {
-  width: 125%;
+  width: 100%;
   border-radius: 15px 15px 0px 0px;
 }
 
@@ -61,7 +61,6 @@ h1 {
   top: 50%;
   width: 400px;
   height: 650px;
-  padding: 0px 50px 50px 50px;
   border-radius: 15px;
 }
 
@@ -74,8 +73,8 @@ h1 {
 }
 
 .content {
-  height: 100%;
   margin: auto;
+  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,9 +85,10 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0px 50px 0px 50px;
 }
 
 p {
@@ -119,6 +119,7 @@ p {
 .plan_cluster {
   position: relative;
   right: 10%;
+  padding-left: 7%;
 }
 
 .plan_cluster p {
@@ -155,24 +156,18 @@ a {
   * Mobile Stylings
   *************************/
 @media only screen and (max-width: 600px) {
-  p {
-    color: red;
-  }
   .tile {
     margin: 6%;
   }
   .plan_cluster {
-    position: relative;
-    right: auto;
+    padding-left: 10%;
   }
-}
-
-/*************************
-  * Mobile Stylings
-  *************************/
-@media only screen and (max-width: 375px) {
-  p {
-    color: blue;
+  .content {
+    padding: 0px 25px 0px 25px;
+  }
+  #description {
+    padding-left: 6%;
+    padding-right: 6%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
