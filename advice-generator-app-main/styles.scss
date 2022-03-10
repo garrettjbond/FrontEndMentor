@@ -1,4 +1,23 @@
 /*************************
+* To Do
+*
+* Mount the button to the bottom of the card
+* SVG is screwing up the responsiveness, research more
+* Spacing of h1 needs adjusting 
+* Find a better way to center the dice within the circle styled div
+*
+*
+*
+*
+*****************/
+
+
+/*************************
+* Imports
+*************************/
+@import url("https://fonts.google.com/specimen/Manrope");
+
+/*************************
 * Variables
 *************************/
 // Screen Size
@@ -7,20 +26,34 @@ $desktop: 1440px;
 
 // Colors
     //Primary
-
+     $lightCyan: hsl(193, 38%, 86%);
+     $neonGreen: hsl(150, 100%, 66%);
     //Secondary
+     $grayishBlue: hsl(217, 19%, 38%);
+     $darkGrayishBlue: hsl(217, 19%, 24%);
+     $darkBlue: hsl(218, 23%, 16%);
 
 // Font Details
-
+$fontQuoteSize: 28px;
+$fontWeight: 600;
 
 /*************************
 * Generic Stylings
 *************************/
 //Normalize
-html, body{
+html, body, main{
     margin: 0;
     width: 100%;
     height: 100%;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: $darkBlue;
+}
+
+main{
+    display: flex;
 }
 
 footer{
@@ -28,17 +61,95 @@ footer{
     bottom: .5em;
     width: 100%;
     text-align: center;
+    color: white;
+}
+.footer--p--source, .footer--p--author{
+    color: white;
 }
 
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $darkGrayishBlue;
+    width: 85%;
+    height: 50%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.card--quote{
+    font-size: $fontQuoteSize;
+    color: $lightCyan;
+    font-weight: $fontWeight;
+    text-align: center;
+   }
+
+.card--title{
+    color: $neonGreen;
+    font-size: .5 * $fontQuoteSize;
+  }
+
+  .card--button{
+    background-color: $neonGreen;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.card--button--image{
+    display: block;
+    margin: auto;
+    position: relative;
+}
 
 /*************************
 * Mobile
 *************************/
 @media only screen and (max-width: $mobile) {
-p{
-    color: red;
+
+    .card{
+        width: 85%;
+        height: 50%;
+        padding: 1em;
+    }
+
+    .card--button{
+        width: 80px;
+        height: 80px;
+        top: 40px;
+     }
+
+    .card--divider--desktop{
+        display: none;
+    }
+
+    
+    .card--button--image{
+        top: 24px;
+    }
+
 }
-}
+
 /*************************
 * Desktop
 *************************/
+@media only screen and (min-width: $mobile) {
+    .card{
+        padding: 2em;
+    }
+    
+    .card--divider--mobile{
+        display: none;
+    }
+
+    .card--button{
+        width: 70px;
+        height: 70px;
+        top: 35px;
+     }
+
+    .card--button--image{
+        top: 21px;
+    }
+}
