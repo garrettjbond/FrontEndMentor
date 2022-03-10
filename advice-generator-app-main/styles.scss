@@ -1,0 +1,35 @@
+/*************************
+* Variables
+*************************/
+// Screen Size
+$mobile: 375px;
+$desktop: 1440px;
+
+// Colors
+    //Primary
+
+    //Secondary
+
+// Font Details
+
+
+/*************************
+* Generic Stylings
+*************************/
+//Normalize
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*************************
+* Mobile
+*************************/
+@media only screen and (max-width: 600px) {
+    
+}
+/*************************
+* Desktop
+*************************/
