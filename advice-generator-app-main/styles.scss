@@ -23,12 +23,21 @@ html, body{
     height: 100%;
 }
 
+footer{
+    position: absolute;
+    bottom: .5em;
+    width: 100%;
+    text-align: center;
+}
+
 
 /*************************
 * Mobile
 *************************/
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: $mobile) {
+p{
+    color: red;
+}
 }
 /*************************
 * Desktop

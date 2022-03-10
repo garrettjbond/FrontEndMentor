@@ -10,9 +10,22 @@ html, body {
   height: 100%;
 }
 
+footer {
+  position: absolute;
+  bottom: .5em;
+  width: 100%;
+  text-align: center;
+}
+
 /*************************
 * Mobile
 *************************/
+@media only screen and (max-width: 375px) {
+  p {
+    color: red;
+  }
+}
+
 /*************************
 * Desktop
 *************************/
