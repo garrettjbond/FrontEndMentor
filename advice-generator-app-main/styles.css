@@ -3,8 +3,6 @@
 *
 * Mount the button to the bottom of the card
 * SVG is screwing up the responsiveness, research more
-* Spacing of h1 needs adjusting 
-* Find a better way to center the dice within the circle styled div
 *
 *
 *
@@ -57,13 +55,17 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #323a49;
-  width: 85%;
-  height: 50%;
+  width: 75%;
+  height: 40%;
   margin: auto;
+  padding: 1em 1em 0px 1em;
   border-radius: 15px;
 }
 
@@ -77,18 +79,22 @@ footer {
 .card--title {
   color: #52ffa8;
   font-size: 14px;
+  letter-spacing: 5px;
+  padding: 0px;
 }
 
 .card--button {
   background-color: #52ffa8;
   border-radius: 50%;
-  position: relative;
-}
-
-.card--button--image {
-  display: block;
-  margin: auto;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*************************
@@ -96,20 +102,22 @@ footer {
 *************************/
 @media only screen and (max-width: 375px) {
   .card {
-    width: 85%;
-    height: 50%;
-    padding: 1em;
+    width: 80%;
+    height: 40%;
   }
   .card--button {
     width: 80px;
     height: 80px;
-    top: 40px;
+  }
+  .card--button:active {
+    -webkit-box-shadow: 0 0 50px #52ffa8;
+            box-shadow: 0 0 50px #52ffa8;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
   }
   .card--divider--desktop {
     display: none;
-  }
-  .card--button--image {
-    top: 24px;
   }
 }
 
@@ -118,7 +126,7 @@ footer {
 *************************/
 @media only screen and (min-width: 375px) {
   .card {
-    padding: 2em;
+    padding: 2em 2em 0px 2em;
   }
   .card--divider--mobile {
     display: none;
@@ -126,10 +134,14 @@ footer {
   .card--button {
     width: 70px;
     height: 70px;
-    top: 35px;
+    bottom: 0px;
   }
-  .card--button--image {
-    top: 21px;
+  .card--button:hover {
+    -webkit-box-shadow: 0 0 50px #52ffa8;
+            box-shadow: 0 0 50px #52ffa8;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=styles.css.map */
