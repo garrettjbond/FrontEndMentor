@@ -126,7 +126,9 @@ footer{
         }
     }
     .card--divider--mobile{
-        width: 90%;
+        width: 75%;
+        position: absolute;
+        bottom: 38.5%;
     }
     
     .card--divider--desktop{
@@ -137,7 +139,7 @@ footer{
         margin: 0px;
     }
 
-    .card--quote, .card--divider--mobile{
+    .card--quote{
         position: relative;
         top: 10px;
     }
@@ -176,8 +178,9 @@ footer{
     .card--button{
         width: 80px;
         height: 80px;
-        position: relative;
-        top: 85px;
+        position: absolute;
+        bottom: 26%;
+    
         &:hover{
             box-shadow: 0 0 50px $neonGreen;
             transition: 0.2s;
@@ -196,11 +199,12 @@ footer{
 
     .card--title{
         font-size: 16px;
-        top: 10px;
+        position: absolute;
+        top: 34%;
     }
 
     .card--divider--desktop{
-        position: relative;
-        top: 35px;
+        position: absolute;
+        bottom: 37%;
     }
 }
