@@ -2,7 +2,7 @@
 * To Do
 *
 * Mount the button to the bottom of the card
-* SVG is screwing up the responsiveness, research more
+* Fix the button so it's always round
 *
 *
 *
@@ -32,7 +32,7 @@ $desktop: 1440px;
      $darkBlue: hsl(218, 23%, 16%);
 
 // Font Details
-$fontQuoteSize: 28px;
+$fontQuoteSize: 24px;
 $fontWeight: 600;
 
 /*************************
@@ -68,14 +68,14 @@ footer{
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
     background-color: $darkGrayishBlue;
     width: 75%;
     height: 40%;
     margin: auto;
-    padding: 1em 1em 0px 1em;
     border-radius: 15px;
+  
 }
 
 .card--quote{
@@ -87,7 +87,7 @@ footer{
 
 .card--title{
     color: $neonGreen;
-    font-size: .5 * $fontQuoteSize;
+    font-size: .35 * $fontQuoteSize;
     letter-spacing: 5px;
     padding: 0px;
   }
@@ -98,7 +98,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 
@@ -108,26 +107,56 @@ footer{
 @media only screen and (max-width: $mobile) {
 
     .card{
+        padding: 2em 1.25em 0px 1.25em;
         width: 80%;
-        height: 40%;
-        
+        height: 31%;
+        justify-content: space-between;
     }
-
+    
+    
     .card--button{
-        width: 80px;
-        height: 80px;
+        width: 65px;
+        height: 65px; 
+        position: relative;
+        top: 32.5px;
         &:active{
             box-shadow: 0 0 50px $neonGreen;
             transition: 0.2s;
             cursor: pointer;
         }
-     }
-
+    }
+    .card--divider--mobile{
+        width: 90%;
+    }
+    
     .card--divider--desktop{
         display: none;
     }
+    
+    .card--quote, .card--title{
+        margin: 0px;
+    }
+
+    .card--quote, .card--divider--mobile{
+        position: relative;
+        top: 10px;
+    }
+
+    .card--title{
+        position: relative;
+        top: 7px;
+    }
 
     
+}
+
+/*************************
+* Tablet
+*************************/
+@media only screen and (max-width: 600px) {
+    .card--divider--desktop{
+        width: 90%;
+    }
 }
 
 /*************************
@@ -135,8 +164,9 @@ footer{
 *************************/
 @media only screen and (min-width: $mobile) {
     .card{
-        padding: 2em 2em 0px 2em;
-       
+        padding: 0em 2em 0px 2em;
+        max-width: 550px;
+        justify-content: center;
     }
     
     .card--divider--mobile{
@@ -144,13 +174,33 @@ footer{
     }
 
     .card--button{
-        width: 70px;
-        height: 70px;
-        bottom: 0px;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: 85px;
         &:hover{
             box-shadow: 0 0 50px $neonGreen;
             transition: 0.2s;
             cursor: pointer;
         }
+        
      }
+
+    .card--quote{
+        font-size: 28px;
+        line-height: 1.3em;
+        width: 85%;
+        position: relative;
+        top: 5px;
+    }
+
+    .card--title{
+        font-size: 16px;
+        top: 10px;
+    }
+
+    .card--divider--desktop{
+        position: relative;
+        top: 35px;
+    }
 }
