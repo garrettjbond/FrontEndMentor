@@ -148,7 +148,7 @@ footer {
 *************************/
 @media only screen and (max-width: 600px) {
   .card--divider--desktop {
-    width: 90%;
+    width: 75%;
   }
 }
 
