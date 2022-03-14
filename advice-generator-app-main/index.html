@@ -2,16 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Advice generator app</title>
   <script src="./myscripts.js"></script>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-  </style>
 </head>
 <body>
   <main>
@@ -19,11 +14,11 @@
       <h1 class="card--title">ADVICE #<span class="card--titleId">117</span></h1>
       <!-- Quote -->
       <p class="card--quote">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>
-      <!-- SVG Divider : Alter this once screen size hits mobile to have it reflect the proper size -->
       <img src="./images/pattern-divider-mobile.svg" alt="mobile divider" class="card--divider--mobile">
       <img src="./images/pattern-divider-desktop.svg" alt="desktop divider" class="card--divider--desktop">
       <!-- Dice Button -->
-      <div href="#" class="card--button" onclick="getQuote()"><img src="./images/icon-dice.svg" alt="Dice Button" class="card--button--image"></a>
+      <button class="card--button" accesskey="b" onclick="getQuote()"><img src="./images/icon-dice.svg" alt="See More Quotes" class="card--button--image">
+      </button>
     </div>  
   </main>
   <footer class="attribution">
