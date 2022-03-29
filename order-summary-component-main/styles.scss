@@ -141,6 +141,12 @@ p, button{
     color: white;
     box-shadow: 0 10px 20px -6px $Brightblue;
     background-color: $Brightblue;
+    &:hover{
+      background-color: $Desaturatedblue;
+      transition: .3s;
+      box-shadow: 0 10px 20px -6px $Desaturatedblue;
+      cursor: pointer;
+    }
   }
   a{
     color: $Brightblue;
@@ -151,7 +157,19 @@ p, button{
     color: $Desaturatedblue;
     background-color: white;
     text-decoration: none;
+    &:hover{
+      color: $Brightblue;
+      transition: .3s;
+    }
   }
+
+  .plan a:hover{
+    color: $Desaturatedblue;
+    transition: .3s;
+  }
+
+
+
   
   /*************************
   * Mobile Stylings

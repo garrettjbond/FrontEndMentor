@@ -141,6 +141,15 @@ button {
   background-color: #3829e0;
 }
 
+#proceed:hover {
+  background-color: #7280a7;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 0 10px 20px -6px #7280a7;
+          box-shadow: 0 10px 20px -6px #7280a7;
+  cursor: pointer;
+}
+
 a {
   color: #3829e0;
   font-weight: 700;
@@ -150,6 +159,18 @@ a {
   color: #7280a7;
   background-color: white;
   text-decoration: none;
+}
+
+#cancel:hover {
+  color: #3829e0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.plan a:hover {
+  color: #7280a7;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 /*************************
